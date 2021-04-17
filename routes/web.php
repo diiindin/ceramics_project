@@ -19,9 +19,19 @@ use Illuminate\Support\Facades\Mail;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/categories', function () {
+    return view('categories');
+});
+
 Route::post('upload', [UploadController::class, 'index']);
 
 Route::get('/send', function () {
     Mail::to('email@email.com')->send(new OrderMail());
     return new OrderMail();
+});
+
+Route::get('/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('index');
 });

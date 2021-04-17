@@ -20,18 +20,18 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 //list the products
-//Route::get('products', 'ProductController@index');
+//works
+Route::get('/products', [ProductController::class, 'index']);
 
 //list single product
-Route::get('product/{id}', 'ProductController@show');
+//works
+Route::get('/product/{id}', [ProductController::class, 'show']);
 
 //create new product
-Route::post('product', 'ProductController@store');
+Route::post('/product', [ProductController::class, 'store']);
 
 //update product
-Route::put('product', 'ProductController@store');
+Route::put('/product/{id}', [ProductController::class, 'update']);
 
 //delete product
-Route::delete('product/{id}', 'ProductController@destroy');
-
-Route::get('/products', [ProductController::class, 'index']);
+Route::delete('/product/{id}', [ProductController::class, 'destroy']);

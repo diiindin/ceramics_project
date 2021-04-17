@@ -3,19 +3,22 @@
     <head>
         <meta charset="utf-8">
         <title>Ceramics Shop</title>
-        <link rel="stylesheet" href="css/web.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/web.css">
     </head>
     <body>
+        @extends('layout')
+        @section('content')
         <div class="container">
             <div class="navbar">
                 <img src="https://www.pngrepo.com/download/264401/bee.png" class="logo">
                 <nav>
                     <ul>
-                        <li><a href="">Все товары</a></li>
-                        <li><a href="">Категории</a></li>
+                        <li><a href="">{{__('lang.home')}}</a></li>
+                        <li><a href="">{{__('lang.categories')}}</a></li>
                     </ul>
                 </nav>
                 <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" class="cart">
@@ -28,7 +31,7 @@
                         <h3 class="card-title">Набор тарелок Blue Sky</h3>
                         <h4>15000 T</h4>
                         <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
 
@@ -38,7 +41,7 @@
                         <h3 class="card-title">Черная матовая тарелка</h3>
                         <h4>5000 T</h4>
                         <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
 
@@ -48,7 +51,7 @@
                         <h3 class="card-title">Кружка Marble</h3>
                         <h4>15000 T</h4>
                         <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
 
@@ -58,7 +61,7 @@
                         <h3 class="card-title">Керамическая кружка</h3>
                         <h4>15000 T</h4>
                         <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
 
@@ -68,7 +71,7 @@
                         <h3 class="card-title">Розовые кружки Strawberry</h3>
                         <h4>15000 T</h4>
                         <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
 
@@ -78,20 +81,21 @@
                         <h3 class="card-title">Декоративная ваза</h3>
                         <h4>15000 T</h4>
                         <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">В корзину</button>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
             </div>
 
             <div class="upload">
-                <h1>Не нашли то, что искали?</h1>
-                <p>Отправьте нам фотографию и мы постраемся сделать изделие</p>
+                <h1>{{__('lang.upload')}}</h1>
+                <p>{{__('lang.send')}}</p>
                 <form action="upload" method="POST" enctype="multipart/form-data">
                     @csrf
                     <input type="file" name="file"><br><br>
-                    <button class="btn btn-primary" type="submit">Загрузить</button>
+                    <button class="btn btn-primary" type="submit">{{__('lang.upl_btn')}}</button>
                 </form>    
             </div>
         </div>
+        @endsection
     </body>
 </html>
