@@ -74,4 +74,15 @@ class ProductController extends Controller
             return new ProductResource($product);
         }
     }
+
+    public function update(Request $request, $id)
+    {
+        //
+        $product =Product::findOrFail($id);
+        $product->id=$request->id;
+        $product->name=$request->name;
+        if($product->save()){
+            return new ProductResource($product);
+        }
+    }
 }

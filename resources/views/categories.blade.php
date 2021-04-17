@@ -27,19 +27,19 @@
 
             <div class="categories_main">
                 <div class="panel">
-                    <a href="#"><img src="https://www.pngrepo.com/png/112567/512/dishes.png">
+                    <a href="#"><img id="small" src="https://www.pngrepo.com/png/112567/512/dishes.png">
                     <h2>Посуда</h2></a>
                     <p>Чаши, тарелки, кружки и многое другое</p>
                 </div>
 
                 <div class="panel">
-                    <a href="#"><img src="https://i.pinimg.com/originals/85/be/4c/85be4c3e233e9a3b3a831ed5cdaae666.png">
+                    <a href="#"><img id="small" src="https://i.pinimg.com/originals/85/be/4c/85be4c3e233e9a3b3a831ed5cdaae666.png">
                     <h2>Аксессуары</h2></a>
                     <p>Уникальные и веселые кольца, подвески, органайзеры</p>
                 </div>
 
                 <div class="panel">
-                    <a href="#"><img src="https://www.pngrepo.com/png/112567/512/dishes.png">
+                    <a href="#"><img id="small" src="https://img.pngio.com/art-icons-600-free-files-in-png-eps-svg-format-art-png-images-black-and-white-512_512.png">
                     <h2>Арт</h2></a>
                     <p>Декоративные вазы, статуетки, абстарктные композиции</p>
                 </div>
