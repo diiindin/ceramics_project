@@ -26,13 +26,22 @@
 
 
             <div class="categories_main">
-                @foreach($categories as $category)
+
                 <div class="panel">
-                    <a href="/{{ $category -> code }}"><img id="small" src="https://www.pngrepo.com/png/112567/512/dishes.png">
-                    <h2>{{ $category -> name }}</h2></a>
-                    <p>{{ $category -> description }}</p>
+                    <!--<a href="#"><img id="small" src="https://img.pngio.com/art-icons-600-free-files-in-png-eps-svg-format-art-png-images-black-and-white-512_512.png">-->
+                    <h2>Арт</h2></a>
+                    <p>Декоративные вазы, статуэтки, абстрактные композиции</p>
                 </div>
-                @endforeach
+
+                <div class="cards">
+                    <img src="https://st21.stblizko.ru/images/product/410/282/905_big.jpg">
+                    <div class="card-body">
+                        <h3 class="card-title">Декоративная ваза</h3>
+                        <h4>15000 T</h4>
+                        <h5>Описание Описание Описание Описание Описание </h5>
+                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
+                    </div>
+                </div>
             </div>
 
             

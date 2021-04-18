@@ -24,7 +24,15 @@
                 <img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" class="cart">
             </div>
 
-            <div class="card-deck"> 
+
+            <div class="categories_main">
+                <div class="panel">
+                    <!--<a href="#"><img id="small" src="https://www.pngrepo.com/png/112567/512/dishes.png">-->
+                    <h2>{{ $category->name }}</h2></a>
+                    <p>{{ $category->description }}</p>
+                </div>
+
+                <div class="card-deck"> 
                 <div class="cards">
                     <img src="https://i2.wp.com/kuhniclub.ru/wp-content/uploads/2016/10/keramicheskaya-posuda-2.jpg?resize=700%2C700&ssl=1">
                     <div class="card-body">
@@ -74,27 +82,9 @@
                         <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
                     </div>
                 </div>
-
-                <div class="cards">
-                    <img src="https://st21.stblizko.ru/images/product/410/282/905_big.jpg">
-                    <div class="card-body">
-                        <h3 class="card-title">Декоративная ваза</h3>
-                        <h4>15000 T</h4>
-                        <h5>Описание Описание Описание Описание Описание </h5>
-                        <button type="submit" class="btn btn-primary" role="button">{{__('lang.cart')}}</button>
-                    </div>
-                </div>
             </div>
 
-            <div class="upload">
-                <h1>{{__('lang.upload')}}</h1>
-                <p>{{__('lang.send')}}</p>
-                <form action="upload" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <input type="file" name="file"><br><br>
-                    <button class="btn btn-primary" type="submit">{{__('lang.upl_btn')}}</button>
-                </form>    
-            </div>
+            
         </div>
         @endsection
     </body>

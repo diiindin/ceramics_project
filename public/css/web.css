@@ -63,17 +63,18 @@ h4 {
 	text-align: center;
 }
 .upload {
-    margin: 30px auto;
+    padding: 50px;
     text-align: center;
 }
 .categories_main {
     display: flex;
-    box-sizing: border-box;
+    display: block;
+    padding: 50px;
 }
 .panel {
     margin: 50px auto;
     text-align: center;
 }
 #small {
-    width: 30%;
+    width: 10%;
 }

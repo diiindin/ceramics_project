@@ -26,13 +26,14 @@
 
 
             <div class="categories_main">
-                @foreach($categories as $category)
+
                 <div class="panel">
-                    <a href="/{{ $category -> code }}"><img id="small" src="https://www.pngrepo.com/png/112567/512/dishes.png">
-                    <h2>{{ $category -> name }}</h2></a>
-                    <p>{{ $category -> description }}</p>
+                    <!--<a href="#"><img id="small" src="https://i.pinimg.com/originals/85/be/4c/85be4c3e233e9a3b3a831ed5cdaae666.png">-->
+                    <h2>Аксессуары</h2></a>
+                    <p>Уникальные и веселые кольца, подвески, органайзеры</p>
                 </div>
-                @endforeach
+
+
             </div>
 
             
