@@ -18,6 +18,8 @@ In this project I used the php Laravel framework, PHPMyAdmin as a database, boot
 
 There are two tables: Categories and Products. The ceramics_id is a foreign key that is connecting them. The relation between tables is 'one to many' because each product has only one category and each category may have many produtcs.
 
+<img src="C:\Users\шк\Pictures\Screenshots\db.png">
+
 ## Localization
 
 My website supports two languages: Russian (main) and English
