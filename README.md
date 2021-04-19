@@ -12,7 +12,7 @@ This is the online shop that sells different ceramic handicrafts. It has various
 - Uploading a photo [png, jpeg]
 - Make an order
 
-In this project I used the php Laravel framework, PHPMyAdmin as a database, bootstrap, jQuery libraries, Heroku.com for deploying, Mailtrap.io
+In this project I used the php Laravel framework, PHPMyAdmin as a database, bootstrap, jQuery libraries, Heroku.com for deploying, Mailtrap.io for sending messages
 
 ## Database
 
